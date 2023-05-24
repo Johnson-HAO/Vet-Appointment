@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client/build/index.html"));
   });
 }
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 
 // console.log(process.env.MONGO_URL)
 app.get("/", (req, res) => res.send("Hello World!"));
